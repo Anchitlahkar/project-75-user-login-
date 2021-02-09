@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import writeStoryScreen from './screens/WriteStory';
 import readStoryScreen from './screens/ReadStory';
 import ReadStory from './screens/Story';
+import Story from './screens/Story'
 import LoginScreen from './screens/Login'
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
@@ -50,6 +51,7 @@ const TabNavigator = createBottomTabNavigator(
 var AppNavigator = createSwitchNavigator({
   HomeScreen: LoginScreen,
   TabNavigator: TabNavigator,
+  Story: Story
 });
 
 const AppContainer = createAppContainer(AppNavigator);
